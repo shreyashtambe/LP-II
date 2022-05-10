@@ -1,6 +1,4 @@
-pip install chatterbot
-
-
+pip install chatterbot  # use this 2 installation line in cmd & other code in jupyter notebook
 pip install chatterbot_corpus
 
 import spacy
