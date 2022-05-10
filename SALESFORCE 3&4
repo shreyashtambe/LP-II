@@ -1,0 +1,91 @@
+
+Ass 3
+
+1. Goto developers.salesforce.com - sign up - scroll down - login - top right corner click on settings logo & press setup 
+2. Create custom object
+3. Label: book
+4. Plural: books ( keep others as it is )
+5. Save if below save won't work click on above save
+6. Goto home click on book then on field & relationship in left side
+7. New -then tap on number - next 
+8. Field label : price
+9. Field length: 16
+10. Decimal places:2
+11. Next - Next - save
+12. Home - click on custome codes in left side - apex classes - click on new button
+13. Copy paste appex code 
+
+public class MyHelloWorld{
+
+public static void applyDiscount(book__c[] books){
+
+  for(book__c b: books){
+  
+    b.price__c*=0.9;
+
+  }
+}
+}
+
+and save
+
+14. Home - click on book in object column in front of custom field definition
+15. Trigger in left side then new then triggered code
+
+trigger HelloWorldTrigger on book__c(before insert)
+{
+
+book__c[] books = Trigger.new;
+
+MyHelloWorld.applyDiscount(books);
+
+}
+
+16. and save 
+
+Q. What is SalesForce ?
+Salesforce, Inc. is an American cloud-based software company 
+It provides customer relationship management (CRM) software and 
+applications focused on sales, customer service, marketing automation, analytics, and application development.
+
+**************************************************************************************
+**************************************************************************************
+
+
+
+Ass 4
+
+Take ss of each steps u can't take ss afterwards 
+
+1. Search Launch trailhead playground and click on 2nd link " Launch Your Trailhead Playground Unit " 
+
+2. Scroll down and sign in by Salesforce
+    And then again come backward from where you click login there ull see Launch button now
+
+3. Now click on 3 dots give any name to ur playground and click on launch 
+
+4. On top right corner click on settings logo and click on setup
+
+5. Click on create -> custom object
+
+6. Enter label comment 
+7. Enter plural comment1
+
+8. Tick Allow Reports in Optional features and then click on save button if it won't work there will be save button on the top click on that
+
+9. Now object is ready go to home refresh and chek whether it is built or not
+
+10. Now create -> custom tab -> object : comment -> tab style click on any one among this list e.g. cup 
+
+11. Next - Next - save 
+12. On homepage in Quick find search app manager click on new lightening app give app name commentbox same for dev name
+
+- Next - next - next - next - search system administrator click on it and press right arrow now click on save and finish
+
+13 now ur app is ready now on top left corner click on 9 circles search app launcher click on it and select your app i.e commentbox 
+
+Done ✅ 
+
+Q. What is trailhead? 
+Trailhead is a series of online tutorials that coach beginner and intermediate developers who need to learn how to code for the Salesforce platform.
+
